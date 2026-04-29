@@ -15,7 +15,7 @@ export default function LmbFooter() {
               target="_blank"
               className="font-bold"
             >
-              AFT GROUPS
+              AFT GROUP
             </Link>
           </p>
         </div>
