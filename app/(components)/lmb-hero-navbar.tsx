@@ -14,7 +14,7 @@ export default function LmbHeroNavbar() {
             alt="LMB Logo"
             width={80}
             height={80}
-            className="cursor-pointer object-contain"
+            className="cursor-pointer w-16 h-16"
           />
         </Link>
       </div>

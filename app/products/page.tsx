@@ -28,7 +28,7 @@ export default function ProductsPage() {
                 <input
                   type="text"
                   placeholder="Cherchez un produit"
-                  className="bg-gray-200 px-4 py-2 w-80 sm:w-96 text-gray-700 placeholder-gray-500 
+                  className="bg-gray-200 px-4 py-2 w-64 md:w-80 sm:w-96 text-gray-700 placeholder-gray-500 
              rounded-full 
              focus:outline-none focus:ring-2 focus:ring-primary"
                 />

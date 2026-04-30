@@ -33,7 +33,7 @@ export default function ProductCard({ product }: { product: ProductType }) {
         />
 
         {product.promo && (
-          <div className="absolute top-2 left-2">
+          <div className="absolute top-0 left-0 md:top-2 md:left-2">
             <Image
               src="/badge-promo.svg"
               alt="En promo"

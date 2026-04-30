@@ -35,17 +35,18 @@ const categories = [
 ];
 
 const prices = [
-  "All price",
-  "Under $20",
-  "$25 to $100",
-  "$100 to $300",
-  "$300 to $500",
-  "$500 to $1,000",
+  "Tout",
+  "Moins de 50.000FCFA",
+  "50.000 - 200.000 FCFA",
+  "200.000 - 500.000 FCFA",
+  "500.000 - 1.000.000 FCFA",
+  "1.000.000 - 2.000.000 FCFA",
+  "Plus de 2.000.000 FCFA",
 ];
 
 export default function SideBarFilter() {
-  const [openCategory, setOpenCategory] = useState(true);
-  const [openPrice, setOpenPrice] = useState(true);
+  const [openCategory, setOpenCategory] = useState(false);
+  const [openPrice, setOpenPrice] = useState(false);
 
   const [selectedCategories, setSelectedCategories] = useState<string[]>([]);
   const [selectedPrices, setSelectedPrices] = useState<string[]>([]);
@@ -69,7 +70,7 @@ export default function SideBarFilter() {
         <div>
           <button
             onClick={() => setOpenCategory(!openCategory)}
-            className="w-full flex justify-between mb-3 items-center font-semibold"
+            className="w-full flex justify-between mb-3 cursor-pointer items-center font-semibold"
           >
             Categorie
             <span>
@@ -122,7 +123,7 @@ export default function SideBarFilter() {
         <div>
           <button
             onClick={() => setOpenPrice(!openPrice)}
-            className="w-full flex justify-between mb-3 items-center font-semibold"
+            className="w-full flex justify-between mb-3 cursor-pointer items-center font-semibold"
           >
             Fourchette de prix
             <span>

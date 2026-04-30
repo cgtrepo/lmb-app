@@ -13,7 +13,7 @@ export default function LmbMainNavbar() {
               alt="Lmb Logo"
               width={80}
               height={80}
-              className="cursor-pointer"
+              className="cursor-pointer w-16 h-16"
             />
           </Link>
           <MenuDropdown />
